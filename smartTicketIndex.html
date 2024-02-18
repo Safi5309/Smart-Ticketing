@@ -13,8 +13,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="container mx-auto">
-    <header>
+<body>
+    <header class="container mx-auto">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -34,7 +34,8 @@
                             <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-[#030712] lg:text-4xl text-2xl font-extrabold font-raleway">P-Ticket</a>
+                    <a
+                        class="btn btn-ghost text-[#030712] lg:text-4xl text-2xl font-extrabold font-raleway">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 font-raleway cl">
@@ -45,25 +46,31 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn bg-[#1DD1001A] text-[#1DD100] text-xl font-bold font-raleway">Bus <img src="images/bus-icon.png" alt=""></a>
+                    <a class="btn bg-[#1DD1001A] text-[#1DD100] text-xl font-bold font-raleway">Bus <img
+                            src="images/bus-icon.png" alt=""></a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <!-- Banner Section -->
-           <section class="banner">
-                <div id="item1" class=" h-[700px] bg-no-repeat bg-cover bg-center lg:m-0 m-2 rounded-3xl" style=" background-image: url('images/banner.png');">
-                     
-                         <div class="flex flex-col items-center justify-center" >
-                            <h1 class="text-6xl text-center text-white font-raleway font-extrabold mt-20">End-to-End Travel with</h1>
-                             <h1 class="text-[#1DD100] text-6xl text-center font-raleway font-extrabold mt-7">P Paribahan 
-                            </h1>
-                            <p class="text-white font-normal font-inter text-lg text-center mt-4">Yes, you can run unit tests and view the results directly within the app. <br>The integrated testing features allow for a streamlined .</p>
-                            <button class="btn mt-8 bg-[#1DD100] text-black font-bold border-none font-raleway text-xl">Buy Tickets</button>
-                         </div>   
-              </div> 
-              <div class="flex lg:flex-row flex-col lg:justify-evenly mx-2 lg:mx-0 lg:-mt-16">
+        <section class=" container mx-auto banner ">
+            <div id="item1" class=" h-[700px] bg-no-repeat bg-cover bg-center lg:m-0 m-2 rounded-3xl"
+                style=" background-image: url('images/banner.png');">
+
+                <div class="flex flex-col items-center justify-center">
+                    <h1 class="text-6xl text-center text-white font-raleway font-extrabold mt-20">End-to-End Travel with
+                    </h1>
+                    <h1 class="text-[#1DD100] text-6xl text-center font-raleway font-extrabold mt-7">P Paribahan
+                    </h1>
+                    <p class="text-white font-normal font-inter text-lg text-center mt-4">Yes, you can run unit tests
+                        and view the results directly within the app. <br>The integrated testing features allow for a
+                        streamlined .</p>
+                    <button class="btn mt-8 bg-[#1DD100] text-black font-bold border-none font-raleway text-xl">Buy
+                        Tickets</button>
+                </div>
+            </div>
+            <div class="flex lg:flex-row flex-col lg:justify-evenly mx-2 lg:mx-0 lg:-mt-16">
                 <div class="bg-[#FFFFFF] border-b-4 border-[#1DD100] max-w-[300px] flex gap-4 p-8 rounded-3xl">
                     <div class=>
                         <img src="images/people.png" alt="">
@@ -91,10 +98,130 @@
                         <p class="text-lg font-normal font-inter text-[#03071299]">Rental partners</p>
                     </div>
                 </div>
-                 
-             </div>
-           </section>
-           
+
+            </div>
+        </section>
+        <!-- coupon section -->
+
+        <section class=" container mx-auto mt-28">
+            <h1 class="text-[40px] font-raleway font-bold text-[#030712] text-center mb-12">Best offers for you</h1>
+            <!-- coupon card container -->
+            <div class="grid lg:grid-cols-2 grid-rows-1 gap-6 ">
+                <!-- 15% coupon -->
+                <div class="bg-[#FFBF0F] rounded-3xl flex justify-around ">
+                    <div class="py-12 ">
+                        <h1 class="font-inter font-black text-[40px] mb-3">15% OFF</h1>
+                        <p class="font-inter font-semibold text-xl mb-2">on your next purchase</p>
+                        <p class="font-inter font-medium text-lg">use by January 2024</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <img src="images/Icons/cupon-devider.png" alt="">
+                        <div class="pt-20 ">
+                            <h1 class="font-raleway font-bold text-2xl text-[#030712] pr-10">NEW15</h1>
+                            <p class="font-raleway font-medium text-lg text-[#03071266] mt-2">Coupon code</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 20% coupon -->
+                <div class="bg-[#F78C9C] rounded-3xl flex justify-around ">
+                    <div class="py-12 ">
+                        <h1 class="font-inter font-black text-[40px] mb-3">20% OFF</h1>
+                        <p class="font-inter font-semibold text-xl mb-2">on your next purchase</p>
+                        <p class="font-inter font-medium text-lg">use by January 2024</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <img src="images/Icons/cupon-devider.png" alt="">
+                        <div class="pt-20 ">
+                            <h1 class="font-raleway font-bold text-lg text-[#030712] ">Couple 20</h1>
+                            <p class="font-raleway font-medium text-lg text-[#03071266] mt-2">Coupon code</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex items-center justify-center mt-16">
+                <button
+                    class="btn  bg-white text-[#1DD100] border-1 border-[#1DD100] text-xl font-raleway font-bold">See
+                    All Offers</button>
+            </div>
+        </section>
+
+        <!-- ticket section -->
+        <section class="bg-[#F7F8F8] border-t-2 border-[#1DD100] mt-32 rounded-3xl">
+
+            <div class="container mx-auto mt-28">
+                <h1 class="text-[#030712] text-[40px] font-bold font-raleway text-center mb-6">P.H Paribahan</h1>
+                <p class="text-[#03071299] text-lg font-normal font-inter text-center mb-12">Yes, you can run unit tests
+                    and view the results directly within the app. The integrated testing features allow for a
+                    streamlined .</p>
+                <!-- place select section -->
+                <div class="bg-[#FFFFFF] rounded-2xl flex flex-col lg:flex-row">
+                    <!-- left side section -->
+                    <div class="pt-8 pl-8 flex-1">
+                        <div class="flex justify-between">
+                            <div class="flex gap-3 ">
+                                <img src="images/bus-logo.png" alt="">
+                                <div>
+                                    <h3 class="font-raleway font-bold text-[32px] text-black">Greenline Paribahan</h3>
+                                    <p class="font-inter font-normal text-lg text-[#03071299]">Coach-009-WEB !
+                                        AC_Busines </p>
+                                </div>
+                            </div>
+                            <!-- dynaminc seat count  -->
+                            <div class="bg-[#1DD10026] px-4 py-5 rounded-2xl">
+                                <p class="text-[#1DD100] text-lg font-inter font-medium flex gap-1"><img
+                                        src="images/seat-green.png" alt=""><span>40</span> Seat Left</p>
+                            </div>
+                        </div>
+                        <!-- normal location find section -->
+                        <div class="bg-[#F7F8F8] mt-6 rounded-3xl">
+                            <div class="flex justify-between pt-8 px-8 pb-6">
+                                <p class="font-semibold text-lg text-[#03071299]">Route</p>
+                                <p class="font-semibold text-lg text-[#030712]">Dhaka - Sylhet</p>
+                            </div>
+                            <hr class="border-t border-dotted">
+                            <div class="flex justify-between pt-8 px-8 pb-6">
+                                <p class="font-semibold text-lg text-[#03071299]">Departure Time</p>
+                                <p class="font-semibold text-lg text-[#030712]">9:00 PM</p>
+                            </div>
+                            <hr class="border-t border-dotted">
+                            <div class="flex justify-between mx-8 mt-8">
+                                <p class="bg-[#0307120D] rounded-xl p-4 text-[#030712CC] text-base font-medium font-inter">Boarding Point - Laxmipur</p>
+                                <p class="bg-[#0307120D] rounded-xl p-4 text-[#030712CC] text-base font-medium font-inter">Dropping Point - Bogura</p>
+                                <p class="bg-[#0307120D] rounded-xl p-4 text-[#030712CC] text-base font-medium font-inter">Est. Time - 11 Hour</p>
+                            </div>
+                        </div>
+                          <!-- normal location find section end -->
+                          
+                    </div>
+                    <!-- ticket price section -->
+                    <div class="flex gap-5 mr-16">
+                        <img src="images/info-devider.png" alt="">
+                        <div class="mt-32">
+                            <div class="flex items-center justify-center ">
+                                <img class="border-2 border-gray-400 border-dashed" src="images/fare.png" alt="">
+                            </div>
+                            <h3 class="font-raleway font-bold text-black text-2xl mt-5">550 Taka</h3>
+                            <p class="font-raleway font-semibold text-2xl text-[#03071299] mt-2">Per Seat</p>
+                        </div>
+                    </div>
+
+                </div>
+                        <!-- seat section -->
+                <section class="bg-white mt-7">
+                    <!-- bus seat  -->
+                           <div>
+ 
+                           </div>
+                           <!-- calculation section -->
+                           <div>
+
+                           </div>
+                </section>
+            </div>
+
+        </section>
+
     </main>
     <footer>
 
