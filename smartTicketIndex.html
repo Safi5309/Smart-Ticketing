@@ -66,7 +66,8 @@
                     <p class="text-white font-normal font-inter text-lg text-center mt-4">Yes, you can run unit tests
                         and view the results directly within the app. <br>The integrated testing features allow for a
                         streamlined .</p>
-                    <button class="btn mt-8 bg-[#1DD100] text-black font-bold border-none font-raleway text-xl">Buy
+                    <button id="bus-ticket"
+                        class="btn mt-8 bg-[#1DD100] text-black font-bold border-none font-raleway text-xl">Buy
                         Tickets</button>
                 </div>
             </div>
@@ -147,7 +148,7 @@
         </section>
 
         <!-- ticket section -->
-        <section id="uu" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] mt-32 rounded-3xl">
+        <section id="ticket-section" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] mt-32 rounded-3xl">
 
             <div class="container mx-auto mt-28">
                 <h1 class="text-[#030712] text-[40px] font-bold font-raleway text-center mb-6">P.H Paribahan</h1>
@@ -170,7 +171,7 @@
                             <!-- dynaminc seat count  -->
                             <div class="bg-[#1DD10026] px-4 py-5 rounded-2xl">
                                 <p class="text-[#1DD100] text-lg font-inter font-medium flex gap-1"><img
-                                        src="images/seat-green.png" alt=""><span>40</span> Seat Left</p>
+                                        src="images/seat-green.png" alt=""><span id="seat-left">40</span> Seat Left</p>
                             </div>
                         </div>
                         <!-- normal location find section -->
@@ -214,100 +215,212 @@
 
                 </div>
                 <!-- seat section -->
-                <section class="bg-white mt-7 mb-20">
-                    <!-- bus seat  -->
-                    <div class=" ml-8">
-                        <h2 class="font-raleway font-semibold text-2xl text-black pt-8 pb-6">Select Your Seat</h2>
-                        <hr class="border-t border-dotted">
-                        <div class="flex justify-between pt-5 pb-5">
-                            <p class="text-[#03071280] font-inter font-medium text-lg flex gap-1 "><img
-                                    src="images/seat-gray.png" alt="">Available</p>
-                            <p class="text-[#1DD100] font-inter font-medium text-lg flex gap-1 "><img
-                                    src="images/seat-green-filled.png" alt="">Selected</p>
-                        </div>
-                        <hr class="border-t border-dotted">
-                        <!-- ticket button system start -->
-                        <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium ml-[425px] mb-3 mt-6"><img src="images/Icons/Vector.svg" alt=""></button>
+                <section class="bg-white mt-7 mb-20 flex lg:flex-row flex-col justify-evenly ">
 
-                        <div class="flex gap-12">
+
+                    <div class="">
+                        <div class="mt-8 ml-8">
+                            <h2 class="text-[#030712] text-2xl font-semibold font-raleway mb-5">Select Your Seat
+                            </h2>
+                            <hr class="border-t border-dotted">
+                            <div class="flex justify-between mt-5 mb-5">
+                                <p class="text-[#03071280] text-lg font-inter font-medium flex gap-1"><img
+                                        src="images/seat-gray.png" alt="">Available</p>
+                                <p class="text-[#1DD100] text-lg font-inter font-medium flex gap-1"> <img
+                                        src="images/seat-green-filled.png" alt="">Selected</p>
+                            </div>
+                            <hr class="border-t border-dotted">
+                        </div>
+                        <button
+                            class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium ml-[632px] mb-6 mt-6"><img
+                                src="images/Icons/Vector.svg" alt=""></button>
+
+                        <!-- bus seat  -->
+                        <div class="flex lg:flex-row flex-col justify-between gap-24">
                             <!-- left tickets -->
-                            <div class="flex gap-3">
-                                 <div class="flex gap-2 justify-center items-center">
-                                    <div class="flex flex-col justify-around gap-[52px]">
-                                    <p class="text-lg font-medium text-[#03071280]">A</p>
-                                    <p class="text-lg font-medium text-[#03071280]">B</p>
-                                    <p class="text-lg font-medium text-[#03071280]">C</p>
-                                    <p class="text-lg font-medium text-[#03071280]">D</p>
-                                    <p class="text-lg font-medium text-[#03071280]">E</p>
-                                    <p class="text-lg font-medium text-[#03071280]">F</p>
-                                    <p class="text-lg font-medium text-[#03071280]">G</p>
-                                    <p class="text-lg font-medium text-[#03071280]">H</p>
-                                    <p class="text-lg font-medium text-[#03071280]">I</p>
+                            <div class="flex gap-12">
+                                <div class="flex gap-7 justify-center items-center">
+                                    <div class="flex flex-col justify-around gap-[52px] ml-12">
+                                        <p class="text-lg font-medium text-[#03071280]">A</p>
+                                        <p class="text-lg font-medium text-[#03071280]">B</p>
+                                        <p class="text-lg font-medium text-[#03071280]">C</p>
+                                        <p class="text-lg font-medium text-[#03071280]">D</p>
+                                        <p class="text-lg font-medium text-[#03071280]">E</p>
+                                        <p class="text-lg font-medium text-[#03071280]">F</p>
+                                        <p class="text-lg font-medium text-[#03071280]">G</p>
+                                        <p class="text-lg font-medium text-[#03071280]">H</p>
+                                        <p class="text-lg font-medium text-[#03071280]">I</p>
+                                        <p class="text-lg font-medium text-[#03071280]">J</p>
                                     </div>
-                                    <div class="flex flex-col gap-6"> 
-                                        <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">A1</button>
-                                        <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">B1</button>
-                                        <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">C1</button>
-                                        <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">D1</button>
-                                        <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">E1</button>
-                                        <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">F1</button>
-                                        <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">G1</button>
-                                        <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">H1</button>
-                                        <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">I1</button>
+                                    <div class="flex flex-col gap-6">
+                                        <button onclick="clicked('A1')" id="A1"
+                                            class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">A1</button>
+                                        <button onclick="clicked('B1')" id="B1"
+                                            class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">B1</button>
+                                        <button onclick="clicked('C1')" id="C1"
+                                            class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">C1</button>
+                                        <button onclick="clicked('D1')" id="D1"
+                                            class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">D1</button>
+                                        <button onclick="clicked('E1')" id="E1"
+                                            class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">E1</button>
+                                        <button onclick="clicked('F1')" id="F1"
+                                            class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">F1</button>
+                                        <button onclick="clicked('G1')" id="G1"
+                                            class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">G1</button>
+                                        <button onclick="clicked('H1')" id="H1"
+                                            class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">H1</button>
+                                        <button onclick="clicked('I1')" id="I1"
+                                            class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">I1</button>
+                                        <button onclick="clicked('J1')" id="J1"
+                                            class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">J1</button>
                                     </div>
-                                 </div>
-                                 <div class="flex flex-col gap-6"> 
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">A1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">B1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">C1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">D1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">E1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">F1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">G1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">H1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">I1</button>
+                                </div>
+                                <div class="flex flex-col gap-6">
+                                    <button onclick="clicked('A2')" id="A2"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">A2</button>
+                                    <button onclick="clicked('B2')" id="B2"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">B2</button>
+                                    <button onclick="clicked('C2')" id="C2"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">C2</button>
+                                    <button onclick="clicked('D2')" id="D2"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">D2</button>
+                                    <button onclick="clicked('E2')" id="E2"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">E2</button>
+                                    <button onclick="clicked('F2')" id="F2"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">F2</button>
+                                    <button onclick="clicked('G2')" id="G2"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">G2</button>
+                                    <button onclick="clicked('H2')" id="H2"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">H2</button>
+                                    <button onclick="clicked('I2')" id="I2"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">I2</button>
+                                    <button onclick="clicked('J2')" id="J2"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">J2</button>
                                 </div>
                             </div>
-                            <div class="flex gap-3">
-                                <div class="flex flex-col gap-6"> 
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">A1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">B1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">C1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">D1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">E1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">F1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">G1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">H1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">I1</button>
+                            <div class="flex gap-12 mx-auto lg:mx-0">
+                                <div class="flex flex-col gap-6">
+                                    <button onclick="clicked('A3')" id="A3"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">A3</button>
+                                    <button onclick="clicked('B3')" id="B3"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">B3</button>
+                                    <button onclick="clicked('C3')" id="C3"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">C3</button>
+                                    <button onclick="clicked('D3')" id="D3"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">D3</button>
+                                    <button onclick="clicked('E3')" id="E3"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">E3</button>
+                                    <button onclick="clicked('F3')" id="F3"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">F3</button>
+                                    <button onclick="clicked('G3')" id="G3"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">G3</button>
+                                    <button onclick="clicked('H3')" id="H3"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">H3</button>
+                                    <button onclick="clicked('I3')" id="I3"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">I3</button>
+                                    <button onclick="clicked('J3')" id="J3"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">J3</button>
                                 </div>
-                                <div class="flex flex-col gap-6"> 
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">A1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">B1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">C1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">D1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">E1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">F1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">G1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">H1</button>
-                                    <button class="btn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">I1</button>
+                                <div class="flex flex-col gap-6">
+                                    <button onclick="clicked('A4')" id="A4"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">A4</button>
+                                    <button onclick="clicked('B4')" id="B4"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">B4</button>
+                                    <button onclick="clicked('C4')" id="C4"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">C4</button>
+                                    <button onclick="clicked('D4')" id="D4"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">D4</button>
+                                    <button onclick="clicked('E4')" id="E4"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">E4</button>
+                                    <button onclick="clicked('F4')" id="F4"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">F4</button>
+                                    <button onclick="clicked('G4')" id="G4"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">G4</button>
+                                    <button onclick="clicked('H4')" id="H4"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">H4</button>
+                                    <button onclick="clicked('I4')" id="I4"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">I4</button>
+                                    <button onclick="clicked('J4')" id="J4"
+                                        class="btn selectedbtn w-[110px] h-[56px] text-center text-[#03071280] text-lg  font-medium">J4</button>
                                 </div>
                             </div>
                         </div>
-                        <!-- ticket making system end -->
                     </div>
-                    <!-- calculation section -->
-                    <div>
-                                
+                    <!-- right section -->
+
+                    <div class="mt-8 lg:ml-8 lg:mr-11 border-l lg:boder border[#0307124D] border-dashed">
+                        <div class="m-2 lg:ml-32">
+                            <h2 class="text-[#030712] text-2xl font-semibold font-raleway mb-5">Select Your Seat</h2>
+                            <hr class="border-t border-dashed border-[#03071233]">
+                            <div class="bg-[#0307121A] rounded-xl" id="seatSelection">
+                                <div class="flex justify-between px-8 py-8 mt-6">
+                                    <p class="text-base font-inter font-bold text-[#030712]">Seat <span class=""><sup
+                                                class="text-white p-1 px-2 h-[13px] w-[23] bg-[#1DD100] text-sm rounded-lg" id="sit-number">0</sup></span>
+                                    </p>
+                                    <p class="text-base font-inter font-bold text-[#030712]">Class</p>
+                                    <p class="text-base font-inter font-bold text-[#030712]">Price</p>
+                                </div>
+                                <hr class="border-t border-dashed border-[#03071233]">
+                                <div class="sit" id="sit">
+
+                                </div>
+                                <hr class="border-t border-[#03071233] mt-4">
+                                <div class="flex justify-between pl-8 pr-11 mt-4">
+                                    <p class="text-xl font-inter font-bold text-[##030712]">Total</p>
+                                    <p class="text-xl font-bold text-[##030712]">BDT<span id="total-price">000</span></p>
+                                </div>
+                                <div id="discount-price-hidden" class="flex justify-between pl-8 pr-11 mt-4 hidden">
+                                    <p class="text-xl font-inter font-bold text-[##030712]">Discount Price</p>
+                                    <p class="text-xl font-bold text-[##030712]">BDT<span id="current-discount-price">000</span></p>
+                                </div>
+                                <div class="mx-8 bg-white rounded-lg h-14 flex justify-between mt-4">
+                                    <input id="cupon-filed" class="w-3/4 h-9 ml-6 mt-3" type="text" placeholder="Have any coupon?">
+                                    <button onclick="click2('cupon-button')" class="btn my-1 mr-2 5"  disabled id="cupon-button">Apply</button>
+                                </div>
+                                <div class="flex justify-between pl-8 pr-11 mt-4 pb-4 ">
+                                    <p id="grand-para" class="text-xl font-inter font-bold text-[##030712]">Grand Total</p>
+                                    <p class="text-xl font-bold text-[##030712] ">BDT<span Id="grand-price">000</span></p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="pl-7 pr-11 mt-4 ">
+                                    <h3 class="font-inter font-bold text-xl text-black">Passenger Name*</h3>
+                                    <input
+                                        class="w-full text-lg text-[#03071266] mt-4 font-medium font-inter p-6 border border-1 border-[#0307121A] rounded-xl"
+                                        type="text" placeholder="Enter your name">
+                                    <h3 class="font-inter font-bold text-xl text-black mt-4">Phone Number*</h3>
+                                    <input
+                                        class="w-full text-lg text-[#03071266] font-medium font-inter mt-4 p-6 border border-1 border-[#0307121A] rounded-xl"
+                                       id="phone" type="text" placeholder="Enter your Phone Number" onchange="nextButton()">
+                                    <h3 class="font-inter font-bold text-xl text-black mt-4">Email Id*</h3>
+                                    <input
+                                        class="w-full text-lg text-[#03071266] font-medium font-inter mt-4 p-6  border border-1 border-[#0307121A] rounded-xl"
+                                        type="text" placeholder="Enter your Email Id">
+                                    <button
+                                        class="btn bg-[#1DD100] w-full  rounded-2xl mt-4 mb-7 text-white font-extrabold font-raleway text-xl bg-[]" id="next" disabled>Next</button>
+                                </div>
+                                <div class="mt-4 flex justify-evenly ">
+                                    <p class="text-xl font-inter text-[#03071299] underline font-normal">Terms and
+                                        Conditions</p>
+                                    <p class="text-xl font-inter text-[#03071299] underline font-normal">Cancellation
+                                        Policy</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+
                 </section>
             </div>
 
         </section>
 
-    </mai placeholder="a"n>
+    </main>
     <footer>
 
     </footer>
+    <script src="js/smartticket.js"></script>
 </body>
 
 </html>
