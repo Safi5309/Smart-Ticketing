@@ -135,7 +135,7 @@ function click2(parameter) {
     else {
         alert('Invalid Coupon Code');
     }
-    hiddenDiscount()
+     
 }
 // Apply button end 
 
@@ -165,4 +165,8 @@ function generateSeatSelection(seatInfoArray) {
 function check() {
     const phone = document.getElementById('phone').value;
     return phone
+}
+// When click continued
+function clickContinue(){
+    location.reload();
 }
